@@ -92,8 +92,8 @@ describe('buildSubApps', () => {
   const encSub = encodeURIComponent(subUrl);
   const sub = { subUrl, sId: 'abc', subTitle: 'Nova Net' };
 
-  it('offers Android and iOS app lists only', () => {
-    expect(Object.keys(buildSubApps(sub))).toEqual(['android', 'ios']);
+  it('offers Android, iOS and desktop app lists', () => {
+    expect(Object.keys(buildSubApps(sub))).toEqual(['android', 'ios', 'desktop']);
   });
 
   it('gives every Android app a one-tap import link', () => {
@@ -131,5 +131,16 @@ describe('buildSubApps', () => {
     expect(buildSubApps(withQuery).ios[0].url).toBe(
       `shadowrocket://add/sub://${rocket}?remark=Nova%20Net`,
     );
+  });
+
+  it('points Clash Verge Rev at the Clash endpoint when there is one', () => {
+    const clashUrl = 'https://sub.example.com/clash/abc';
+    expect(buildSubApps({ ...sub, subClashUrl: clashUrl }).desktop).toEqual([
+      { name: 'Clash Verge Rev', url: clashUrl },
+    ]);
+  });
+
+  it('falls back to the plain subscription link when there is no Clash endpoint', () => {
+    expect(buildSubApps(sub).desktop).toEqual([{ name: 'Clash Verge Rev', url: subUrl }]);
   });
 });

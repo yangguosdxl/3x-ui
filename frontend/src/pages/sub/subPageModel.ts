@@ -28,7 +28,7 @@ export function usagePercent(usedByte: number, totalByte: number): number {
   return Number.isFinite(pct) ? Math.min(100, Math.max(0, pct)) : 0;
 }
 
-export type AppPlatform = 'android' | 'ios';
+export type AppPlatform = 'android' | 'ios' | 'desktop';
 
 export function detectPlatform(userAgent: string): AppPlatform {
   // iPadOS sends a Macintosh UA, and App Store clients also run on Apple-silicon Macs.
@@ -43,12 +43,14 @@ export interface SubApp {
 
 export interface SubAppSource {
   subUrl: string;
+  subClashUrl?: string;
   sId: string;
   subTitle: string;
 }
 
 export function buildSubApps({
   subUrl,
+  subClashUrl,
   sId,
   subTitle,
 }: SubAppSource): Record<AppPlatform, SubApp[]> {
@@ -68,6 +70,13 @@ export function buildSubApps({
   const incy = { name: 'Incy', url: `incy://add/${subUrl}` };
   const rocketSource = `${subUrl}${subUrl.includes('?') ? '&' : '?'}flag=shadowrocket`;
   const rocketRemark = encodeURIComponent(subTitle || sId || 'Subscription');
+  // Clash Verge Rev reads Mihomo profiles, so it takes the Clash endpoint. The
+  // raw link still resolves to the same profile for Clash clients, which are
+  // detected by their user agent.
+  const clashVerge = {
+    name: 'Clash Verge Rev',
+    url: subClashUrl || subUrl,
+  };
 
   return {
     android: [
@@ -89,5 +98,6 @@ export function buildSubApps({
       happ,
       incy,
     ],
+    desktop: [clashVerge],
   };
 }

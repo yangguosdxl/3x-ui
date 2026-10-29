@@ -44,7 +44,7 @@ export class AllSetting {
   subJsonAutoDetect = false;
   subJsonAlwaysArray = false;
   subJsonUserAgentRegex = '';
-  subClashAutoDetect = false;
+  subClashAutoDetect = true;
   subClashUserAgentRegex = '';
   subTitle = '';
   subSupportUrl = '';
@@ -59,7 +59,7 @@ export class AllSetting {
   subPort = 2096;
   subPath = '/sub/';
   subJsonPath = '/json/';
-  subClashEnable = false;
+  subClashEnable = true;
   subClashPath = '/clash/';
   subDomain = '';
   externalTrafficInformEnable = false;

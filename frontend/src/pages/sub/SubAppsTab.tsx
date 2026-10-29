@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button, Segmented } from 'antd';
-import { AndroidOutlined, AppleOutlined } from '@ant-design/icons';
+import { AndroidOutlined, AppleOutlined, DesktopOutlined } from '@ant-design/icons';
 
 import { APP_ICONS } from './appIcons';
 import type { AppPlatform, SubApp } from './subPageModel';
@@ -15,6 +15,7 @@ interface SubAppsTabProps {
 const PLATFORM_OPTIONS = [
   { value: 'android' as const, label: 'Android', icon: <AndroidOutlined aria-hidden /> },
   { value: 'ios' as const, label: 'iOS', icon: <AppleOutlined aria-hidden /> },
+  { value: 'desktop' as const, label: 'Desktop', icon: <DesktopOutlined aria-hidden /> },
 ];
 
 function AppIcon({ name }: { name: string }) {
