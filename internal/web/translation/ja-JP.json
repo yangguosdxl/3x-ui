@@ -100,6 +100,7 @@
     "tabConfigs": "設定",
     "scanTitle": "スマートフォンでスキャン",
     "scanHint": "VPN アプリでこのコードをスキャンすると、リンクをコピーせずにサブスクリプションを追加できます。",
+    "clashVergeHint": "Clash Verge Rev の「サブスクリプション」→「新規」でこのリンクを貼り付け、または QR コードをスキャンして取り込みます。",
     "updateInterval": "{hours} 時間ごとに自動更新",
     "support": "サポート",
     "qrTitle": "スキャン。インポート。接続。",

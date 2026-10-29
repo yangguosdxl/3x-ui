@@ -23,3 +23,4 @@ identify the app a button opens. They remain the trademarks of their owners.
 | `streisand.webp`    | App Store listing [id6450534064](https://apps.apple.com/app/id6450534064) |
 | `v2box.webp`        | App Store listing [id6446814690](https://apps.apple.com/app/id6446814690) |
 | `incy.webp`         | App Store listing [id6756943388](https://apps.apple.com/app/id6756943388) |
+| `clash-verge-rev.webp` | [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev) icon `128x128.png` |

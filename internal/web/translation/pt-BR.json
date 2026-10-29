@@ -100,6 +100,7 @@
     "tabConfigs": "Configurações",
     "scanTitle": "Escaneie com o celular",
     "scanHint": "Escaneie este código no seu aplicativo de VPN para adicionar a assinatura sem copiar o link.",
+    "clashVergeHint": "No Clash Verge Rev abra Assinaturas → Novo e cole este link, ou escaneie o código QR.",
     "updateInterval": "Atualiza automaticamente a cada {hours} horas",
     "support": "Suporte",
     "qrTitle": "Escaneie. Importe. Conecte.",

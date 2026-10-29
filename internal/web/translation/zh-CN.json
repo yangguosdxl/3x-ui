@@ -100,6 +100,7 @@
     "tabConfigs": "配置",
     "scanTitle": "用手机扫码",
     "scanHint": "在 VPN 应用中扫描此二维码，无需复制链接即可添加订阅。",
+    "clashVergeHint": "在 Clash Verge Rev 中打开「订阅」→「新建」，粘贴此链接或扫描二维码即可导入。",
     "updateInterval": "每 {hours} 小时自动更新",
     "support": "支持",
     "qrTitle": "扫码。导入。连接。",

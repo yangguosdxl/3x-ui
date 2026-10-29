@@ -100,6 +100,7 @@
     "tabConfigs": "Cấu hình",
     "scanTitle": "Quét bằng điện thoại",
     "scanHint": "Quét mã này trong ứng dụng VPN để thêm gói đăng ký mà không cần sao chép liên kết.",
+    "clashVergeHint": "Trong Clash Verge Rev, mở Đăng ký → Mới, dán liên kết này, hoặc quét mã QR.",
     "updateInterval": "Tự động cập nhật mỗi {hours} giờ",
     "support": "Hỗ trợ",
     "qrTitle": "Quét. Nhập. Kết nối.",

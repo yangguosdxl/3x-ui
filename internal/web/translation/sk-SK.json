@@ -100,6 +100,7 @@
     "tabConfigs": "Konfigurácie",
     "scanTitle": "Naskenujte telefónom",
     "scanHint": "Naskenujte tento kód vo svojej VPN aplikácii. Odber konfigurácií sa pridá bez kopírovania odkazu.",
+    "clashVergeHint": "V aplikácii Clash Verge Rev otvorte Predplatby → Nová a vložte tento odkaz alebo naskenujte QR kód.",
     "updateInterval": "Interval automatického obnovenia (hodiny): {hours}",
     "support": "Podpora",
     "qrTitle": "Naskenovať. Importovať. Pripojiť sa.",

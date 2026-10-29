@@ -100,6 +100,7 @@
     "tabConfigs": "設定檔",
     "scanTitle": "用手機掃描",
     "scanHint": "在 VPN 應用程式中掃描此 QR 碼，無需複製連結即可新增訂閱。",
+    "clashVergeHint": "在 Clash Verge Rev 中開啟「訂閱」→「新增」，貼上此連結或掃描 QR 碼即可匯入。",
     "updateInterval": "每 {hours} 小時自動更新",
     "support": "支援",
     "qrTitle": "掃描。匯入。連線。",

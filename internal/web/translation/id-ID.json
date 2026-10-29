@@ -100,6 +100,7 @@
     "tabConfigs": "Konfigurasi",
     "scanTitle": "Pindai dengan ponsel",
     "scanHint": "Pindai kode ini di aplikasi VPN untuk menambahkan langganan tanpa menyalin tautan.",
+    "clashVergeHint": "Di Clash Verge Rev, buka Langganan → Baru lalu tempel tautan ini, atau pindai kode QR.",
     "updateInterval": "Diperbarui otomatis setiap {hours} jam",
     "support": "Dukungan",
     "qrTitle": "Pindai. Impor. Terhubung.",

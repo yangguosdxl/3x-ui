@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Button, QRCode, Tag } from 'antd';
 import { CopyOutlined, DownloadOutlined } from '@ant-design/icons';
 
+import SubClashVergeCard from './SubClashVergeCard';
 import SubQrButton from './SubQrButton';
 
 interface SubLinksTabProps {
@@ -82,6 +83,7 @@ export default function SubLinksTab({ subUrl, subJsonUrl, subClashUrl, onCopy }:
           </div>
         </div>
       )}
+      {subClashUrl && <SubClashVergeCard url={subClashUrl} onCopy={onCopy} />}
     </div>
   );
 }

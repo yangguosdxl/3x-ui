@@ -1,3 +1,4 @@
+import clashVergeRev from './app-icons/clash-verge-rev.webp';
 import happ from './app-icons/happ.svg';
 import incy from './app-icons/incy.webp';
 import shadowrocket from './app-icons/shadowrocket.webp';
@@ -17,4 +18,5 @@ export const APP_ICONS: Record<string, { src: string; tinted: boolean }> = {
   Incy: { src: incy, tinted: false },
   Shadowrocket: { src: shadowrocket, tinted: false },
   Streisand: { src: streisand, tinted: false },
+  'Clash Verge Rev': { src: clashVergeRev, tinted: false },
 };

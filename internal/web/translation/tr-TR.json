@@ -100,6 +100,7 @@
     "tabConfigs": "Yapılandırmalar",
     "scanTitle": "Telefonunuzla tarayın",
     "scanHint": "Bağlantıyı kopyalamadan aboneliği eklemek için bu kodu VPN uygulamanızda tarayın.",
+    "clashVergeHint": "Clash Verge Rev’de Abonelikler → Yeni bölümünü açıp bu bağlantıyı yapıştırın veya QR kodu tarayın.",
     "updateInterval": "Her {hours} saatte bir otomatik güncellenir",
     "support": "Destek",
     "qrTitle": "Tara. İçe aktar. Bağlan.",
